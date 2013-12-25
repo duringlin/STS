@@ -1,0 +1,8 @@
+在SourceTree中打开Terminal，输入：
+ssh-keygen -t rsa -C "email@email.com"
+注意将email替换成自己的。
+之后全部直接回车就可以。
+----
+需要注意的事情：
+git不会跟踪一个空的文件夹，直到该目录下有一个文件。
+如果需要将一个空的文件夹添加到git，请在该文件夹下放置.gitkeep文件。

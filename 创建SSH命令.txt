@@ -1,5 +1,0 @@
-﻿在SourceTree中打开Terminal，输入：
-ssh-keygen -t rsa -C "email@email.com"
-注意将email替换成自己的。
-之后全部直接回车就可以。
-----
