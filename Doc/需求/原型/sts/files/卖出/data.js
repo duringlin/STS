@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"卖出.html",
-  "generationDate":new Date(1388653419016.92),
+  "generationDate":new Date(1388659627078.45),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -380,7 +380,23 @@
               "width":200,
               "height":25}},
           "adaptiveStyles":{
-}},
+},
+          "interactionMap":{
+            "onKeyUp":{
+              "description":"OnKeyUp",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示 行情-卖",
+                      "objectsToFades":[{
+                          "objectPath":["49f14ffab659442b8e9ce5698f15336a"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true},
 {
           "id":"66a45fe24a764c9881860d8e9dfd867b",
           "label":"",
@@ -520,7 +536,7 @@
 }},
 {
           "id":"49f14ffab659442b8e9ce5698f15336a",
-          "label":"",
+          "label":"行情-卖",
           "type":"imageBox",
           "styleType":"imageBox",
           "visible":true,
@@ -549,8 +565,24 @@
                   "height":285}},
               "adaptiveStyles":{
 }}],
+          "interactionMap":{
+            "onKeyUp":{
+              "description":"OnKeyUp",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示 行情-卖",
+                      "objectsToFades":[{
+                          "objectPath":["49f14ffab659442b8e9ce5698f15336a"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true,
           "images":{
-            "normal~":"images/买入/u75.jpg"}},
+            "normal~":"images/买入/行情_u75.jpg"}},
 {
           "id":"3b5c3e3050604a038138710cb544ab4c",
           "label":"",

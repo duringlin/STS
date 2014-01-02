@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看_修改个人信息.html",
-  "generationDate":new Date(1388653419396.19),
+  "generationDate":new Date(1388659627506.86),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

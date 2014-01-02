@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看自选股.html",
-  "generationDate":new Date(1388653418632.72),
+  "generationDate":new Date(1388659626695.41),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

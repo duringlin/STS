@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"买入.html",
-  "generationDate":new Date(1388653418883.9),
+  "generationDate":new Date(1388659626945.85),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -420,6 +420,22 @@
               "height":25}},
           "adaptiveStyles":{
 },
+          "interactionMap":{
+            "onKeyUp":{
+              "description":"OnKeyUp",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示 行情",
+                      "objectsToFades":[{
+                          "objectPath":["f5648add8733498eb4aee8e1ddac37ef"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true,
           "annotation":{
             "描述":"同时显示股票代码和股票名称，"}},
 {
@@ -561,17 +577,18 @@
 }},
 {
           "id":"f5648add8733498eb4aee8e1ddac37ef",
-          "label":"",
+          "label":"行情",
           "type":"imageBox",
           "styleType":"imageBox",
-          "visible":true,
+          "visible":false,
           "style":{
             "location":{
               "x":660,
               "y":80},
             "size":{
               "width":270,
-              "height":285}},
+              "height":285},
+            "visible":false},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -580,18 +597,19 @@
               "isContained":true,
               "type":"richTextPanel",
               "styleType":"paragraph",
-              "visible":true,
+              "visible":false,
               "style":{
                 "location":{
                   "x":660,
                   "y":80},
                 "size":{
                   "width":270,
-                  "height":285}},
+                  "height":285},
+                "visible":false},
               "adaptiveStyles":{
 }}],
           "images":{
-            "normal~":"images/买入/u75.jpg"}}]}},
+            "normal~":"images/买入/行情_u75.jpg"}}]}},
   "masters":{
     "67505eb3967246479ae603d971dc7093":{
       "packageId":"67505eb3967246479ae603d971dc7093",
