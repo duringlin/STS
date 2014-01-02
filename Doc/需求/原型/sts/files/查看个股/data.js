@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看个股.html",
-  "generationDate":new Date(1388652361250.18),
+  "generationDate":new Date(1388653418375.83),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -205,6 +205,21 @@
                   "height":107}},
               "adaptiveStyles":{
 }}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 公司资讯",
+                      "target":{
+                        "targetType":"page",
+                        "url":"公司资讯.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
           "images":{
             "normal~":"images/查看个股/u54.jpg"}},
 {

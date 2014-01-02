@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"委托管理.html",
-  "generationDate":new Date(1388652361849.84),
+  "generationDate":new Date(1388653419142.51),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -73,6 +73,8 @@
                   "height":45}},
               "adaptiveStyles":{
 }}],
+          "annotation":{
+            "描述":"未卖出的可以撤销"},
           "images":{
             "normal~":"images/委托管理/u46.jpg"}},
 {

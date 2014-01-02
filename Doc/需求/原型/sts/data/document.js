@@ -31,7 +31,11 @@
         "children":[{
             "pageName":"查看个股",
             "type":"Wireframe",
-            "url":"查看个股.html"},
+            "url":"查看个股.html",
+            "children":[{
+                "pageName":"公司资讯",
+                "type":"Wireframe",
+                "url":"公司资讯.html"}]},
 {
             "pageName":"查看自选股",
             "type":"Wireframe",

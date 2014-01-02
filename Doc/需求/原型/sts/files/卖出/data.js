@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"卖出.html",
-  "generationDate":new Date(1388652361741.8),
+  "generationDate":new Date(1388653419016.92),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -363,6 +363,8 @@
               "height":25}},
           "adaptiveStyles":{
 },
+          "annotation":{
+            "描述":"不改动则为最新价格交易<br>也可以直接填写目标价格，改为限价委托"},
           "placeholderText":"最新价"},
 {
           "id":"f0ddf06501d64b59a65304bcc14cdf6d",
@@ -580,6 +582,8 @@
                   "height":145}},
               "adaptiveStyles":{
 }}],
+          "annotation":{
+            "描述":"点击每条记录，卖出对话框会显示该记录信息。"},
           "images":{
             "normal~":"images/查看持仓/u48.jpg"}},
 {
