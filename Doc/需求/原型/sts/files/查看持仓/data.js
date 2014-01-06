@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看持仓.html",
-  "generationDate":new Date(1388659626790.22),
+  "generationDate":new Date(1388981166821.68),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"查看持仓",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">查看持仓的要素有哪些？</span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">是否支持卖出操作？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

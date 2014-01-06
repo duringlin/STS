@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"主页.html",
-  "generationDate":new Date(1388659626149.21),
+  "generationDate":new Date(1388981166085.05),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"主页",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">行情多久刷新一次？资讯多久刷新一次？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",
@@ -554,6 +554,21 @@
                   "height":196}},
               "adaptiveStyles":{
 }}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 资讯",
+                      "target":{
+                        "targetType":"page",
+                        "url":"资讯.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
           "images":{
             "normal~":"images/主页/u26.jpg"}},
 {

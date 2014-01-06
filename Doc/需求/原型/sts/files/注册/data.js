@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"注册.html",
-  "generationDate":new Date(1388659626210.62),
+  "generationDate":new Date(1388981166155.02),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"注册",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">注册信息具体的条目有哪些？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

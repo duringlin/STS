@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"操作记录.html",
-  "generationDate":new Date(1388659627614),
+  "generationDate":new Date(1388981167625.35),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"操作记录",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">操作记录的具体内容是什么？和委托管理、交易记录有哪些异同？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

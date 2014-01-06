@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"卖出.html",
-  "generationDate":new Date(1388659627078.45),
+  "generationDate":new Date(1388981167107.81),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"卖出",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">同买入</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

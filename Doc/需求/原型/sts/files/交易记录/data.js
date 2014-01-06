@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"交易记录.html",
-  "generationDate":new Date(1388659627336.01),
+  "generationDate":new Date(1388981167363.6),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"交易记录",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">交易记录需要显示哪些要素？可以进行哪些操作？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

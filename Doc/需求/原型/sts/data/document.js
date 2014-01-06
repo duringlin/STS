@@ -23,7 +23,15 @@
 {
             "pageName":"登陆后页面",
             "type":"Wireframe",
-            "url":"登陆后页面.html"}]},
+            "url":"登陆后页面.html"},
+{
+            "pageName":"资讯",
+            "type":"Wireframe",
+            "url":"资讯.html"},
+{
+            "pageName":"交易行情-未登录",
+            "type":"Wireframe",
+            "url":"交易行情-未登录.html"}]},
 {
         "pageName":"市场数据",
         "type":"Wireframe",

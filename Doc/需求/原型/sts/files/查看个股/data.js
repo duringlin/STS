@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看个股.html",
-  "generationDate":new Date(1388659626453.98),
+  "generationDate":new Date(1388981166515.18),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"查看个股",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">顶部具体的项目有哪些？</span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">中间的图标多久会刷新？能够查看几天的数据？</span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">资讯内容来源于哪儿？</span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">左边的账户数据需要显示哪些信息？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

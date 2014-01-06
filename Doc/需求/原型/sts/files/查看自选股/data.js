@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"查看自选股.html",
-  "generationDate":new Date(1388659626695.41),
+  "generationDate":new Date(1388981166721.14),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"查看自选股",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">自选股的要素包含哪些？</span><span></span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">是否支持排序？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",

@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"买入.html",
-  "generationDate":new Date(1388659626945.85),
+  "generationDate":new Date(1388981166976.2),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -8,7 +8,7 @@
     "type":"Axure:Page",
     "name":"买入",
     "notes":{
-},
+      "默认":"<p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">买入股票会根据进行的买入时间自动选择委托方式，并且给出提示。</span><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\"></span></p><p><span style=\"font-family:'Heiti SC Light', 'Heiti SC';font-weight:200;\">买入操作还需要提供哪些信息？或者还需要和哪些页面进行关联？</span></p>"},
     "style":{
       "baseStyle":"627587b6038d43cca051c114ac41ad32",
       "pageAlignment":"near",
