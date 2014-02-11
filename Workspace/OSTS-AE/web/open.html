@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8"></meta>
+    <title>STS Online - 开户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/mf.css">
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mf.js"></script>
+<script src="http://127.0.0.1:8000/_/js/reloader.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#btnNextUser").click(function(){
+    clearForm($("#form-open"));
+  });
+});
+</script>
+  </head>
+  <body>
+  <div class="navbar navbar-default" role="navigation">
+	        <div class="container">
+	          <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="index.html">在线股票交易系统</a>
+			</div>
+			<div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="open-login.html"><img src="img/icon/logout-512.png" height="20em"> 退出</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
+	      <div class="container container-open">
+	       <div class="open-form">
+	      <form id="form-open" class="form-horizontal form-register" role="form">
+    <div class="form-group">
+    <label for="inputPassport" class="col-sm-2 control-label">身份证号码</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputPassport" placeholder="请输入18位身份证号码">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputTradingPassword" class="col-sm-2 control-label">交易密码</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="inputTradingPassword" placeholder="请输入交易密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputConfirmTradingPassword" class="col-sm-2 control-label">确认密码</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="inputConfirmTradingPassword" placeholder="请确认交易密码">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputBankCardsID" class="col-sm-2 control-label">银行卡号</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputBankCardsID" placeholder="请输入银行卡号">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-7 col-sm-2">
+      <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#showBrokerID">开户</button>
+    </div>
+  </div>
+  </form>
+  </div>
+  </div>
+  <!--对话框内容-->
+  <div class="modal fade" id="showBrokerID" tabindex="-1" role="dialog" aria-labelledby="showBrokerIDModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title"><strong>请记录！</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p>该用户的券商帐号为：</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+        <button id="btnNextUser" type="button" class="btn btn-default" data-dismiss="modal" onclick="clearForm("#form-open")">下一用户</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  </body>
+  </html>

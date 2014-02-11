@@ -1,0 +1,107 @@
+.container-index{
+	height: 300px;
+}
+.login-box,.trading-box,.news-box{
+  display: inline-block;
+  height: 300px;
+  vertical-align: top;
+  overflow: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #eeeeee;
+  -moz-box-sizing: border-box;
+}
+.login-box{
+  background-color: #00809d;
+}
+.trading-box{
+  width: 100%;
+}
+.news-box{
+width: 100%;
+}
+.login-title{
+	height: 100px;
+	margin: 0 auto;
+	padding: 30px;
+	
+}
+.login-title h3{
+	color: #fff;
+	text-align:center;
+}
+.login-input{
+	height: 120px;
+	padding:10px 30px;
+	
+}
+.login-input input{
+	margin:10px auto;
+}
+.login-btn{
+	height: 80px;
+	background-color: #fff;
+	text-align: center;
+	border-top:2px solid #EFEFEF;
+}
+.signin-btn{
+  position: relative;
+  top: 0;
+  border: none;
+  padding: 0 15px;
+  margin: 5px;
+  margin-top: 20px;
+  height: 30px;
+  width: 70%;
+  line-height: 30px;
+  outline: none;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  color: #ffffff;
+  background-color: #67b96f;
+  border-color: transparent;
+  box-shadow: 0 2px 0 #4b9b53;
+  -moz-box-sizing: border-box;
+}
+.signin-btn:hover,.signin-btn:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(93, 178, 101);
+    border-color: transparent;
+}
+.signin-btn:active{
+	top: 2px;
+outline: 0px none;
+box-shadow: none;
+transition: all 0.075s ease 0s;
+}
+
+.trading-title,.news-title{
+	background-color: #00809d;
+	height: 30px;
+	padding: 5px 10px;
+}
+.trading-title h4,.news-title h4{
+	color: #fff;
+	margin: 0px;/*为什么会多出20px的margin*/
+	}
+.trading-body{
+	height: 270px;
+	text-align: center;
+}
+.footer{
+	text-align: center;
+	margin-top: 10px;
+	color: #898989;
+}
+.register-form{
+padding: 30px 60px;
+border-width: 1px;
+border-color: #eeeeee;
+border-radius: 4px;
+box-shadow: none;
+	}
+	.container-open{
+		padding: 20px 200px;
+	}
+
