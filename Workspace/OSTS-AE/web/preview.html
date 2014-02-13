@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>
+            STS Online
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/mf.css">
+        <link rel="stylesheet" href="css/ms.css">
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    
+    <body>
+    <!--header-->
+        <header>
+            <div class="navbar navbar-default navbar-style" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            在线股票交易系统
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="请输入股票代码或简拼">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/JPY-512.png" width="18px">
+                                        1200,00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/polyline-512.png" width="18px">
+                                        4500,00
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        王大锤
+                                        <b class="caret">
+                                        </b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                修改资料
+                                            </a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                退出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/pic/example-user.jpeg" width="50px">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-header-->
+        
+        
+        <!--main-body-->
+        <div class="container">
+            <div class="row">
+                <!--nav-->
+                <nav class="col-md-2 nav-style">
+                    <ul class="side-nav">
+                        <li class="heading">
+                            概览
+                        </li>
+                        <li>
+                            <a href="#">
+                                账户概览
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            市场信息
+                        </li>
+                        <li>
+                            <a href="#">
+                                查看个股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                查看自选股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                查看持仓
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            交易
+                        </li>
+                        <li>
+                            <a href="#">
+                                买入
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                卖出
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                委托管理
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--end-nav-->
+                <!--body-section-->
+                <section class="col-md-10">
+                    <!--暂时不要用iframe，感觉好麻烦-->
+                    <!--body-header-->
+                    <header class="row">
+                    <!--头部-左边-->
+                    <section class="col-md-7 section-header-wel">
+                            <h3>
+                                早上好，王大锤！
+                            </h3>
+                            <div class="col-md-3 col-md-offset-9">
+                                <h4>
+                                    18:00
+                                    <sup>
+                                        Fri
+                                    </sup>
+                                </h4>
+                            </div>
+                    </section>
+                    <!--end-头部-左边-->
+                    <!--头部-右边-->
+                    <section class="col-md-5 section-header-pic">
+                    </section>
+                    <!--end-头部-右边-->
+                    </header>
+                    <!--end-body-header-->
+                    <!--body-->
+                    <section class="row">
+                                <!--财务报告-->
+                                <section class="col-md-7">
+                                        <section class="row-block">
+                                            <h4>
+                                                昨日财务报告
+                                            </h4>
+                                            <div class="row-block report-yesterday">
+                                                <p class="report-yesterday-lable">
+                                                    资产总额
+                                                </p>
+                                                <p class="report-yesterday-assets">
+                                                    <span><img src="img/icon/JPY-512.png" width="30px">200,120.00
+                                                </p>
+                                                <p class="report-yesterday-note">
+                                                    与昨日相比<span class="report-yesterday-change">+9.8%</span>
+                                                </p>
+                                                <p class="report-yesterday-lable">
+                                                    账户余额
+                                                </p>
+                                                <p class="report-yesterday-overage">
+                                                    <span><img src="img/icon/JPY-512.png" width="30px"></span>12,3833.00
+                                                </p>
+                                            </div>
+                                        </section>
+                                        <section class="row-block">
+                                            <h4>
+                                                持仓报告
+                                            </h4>
+                                            <div class="row-block report-positions">
+                                                <div class="table-responsive">
+                                                    <table class="table-positions">
+                                                        <tr>
+                                                            <td class="stock-name">
+                                                                大智慧
+                                                            </td>
+                                                            <td class="stock-price" rowspan="2">
+                                                                8.82
+                                                            </td>
+                                                            <td class="stock-change" rowspan="2">
+                                                                +9.98%
+                                                            </td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="stock-code">
+                                                                SH601519
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="stock-name">
+                                                                苏宁云商
+                                                            </td>
+                                                            <td class="stock-price" rowspan="2">
+                                                                10.39
+                                                            </td>
+                                                            <td class="stock-change" rowspan="2">
+                                                                -0.29%
+                                                            </td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="stock-code">
+                                                                SZ002024
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td class="stock-name">
+                                                                华谊兄弟
+                                                            </td>
+                                                            <td class="stock-price" rowspan="2">
+                                                                30.29
+                                                            </td>
+                                                            <td class="stock-change" rowspan="2">
+                                                                -1.37%
+                                                            </td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="stock-code">
+                                                                SZ300027
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </section>
+                                </section>
+                                <!--新闻-->
+                                <section class="col-md-5 section-news">
+                                    <section class="row-block">
+                                            <h4>
+                                                滚动新闻
+                                                <span class="pull-right"><img src="img/icon/reload-512.png" width="20px"></span>
+                                            </h4>
+                                            <section class="news-body">
+                                            <article  class="row news-block">
+                                            <span><img src="img/icon/new-512.png" width="20px"></span><span class="stock-name">华谊兄弟</span><span class="stock-code">SZ300027</span>
+                                            <aside class="news-block-content">
+	                                            <p class="news-block-title">春节档电影6天票房超过12亿 4概念股爆发在即</p>
+	                                            <p class="news-block-originate">证券时报  08:17</p>
+                                            </aside>
+                                            </article>
+                                            
+                                            <article  class="row news-block">
+                                            <span><img src="img/icon/link-512.png" width="20px"></span><span class="stock-name">大智慧</span><span class="stock-code">SH601519</span>
+                                            <aside class="news-block-content">
+	                                            <p class="news-block-title">发改委拟建农产品目标价格制 农业价格险变身香饽饽</p>
+	                                            <p class="news-block-originate">中证网  06:12</p>
+                                            </aside>
+                                            </article>
+                                            
+                                            <article  class="row news-block">
+                                            <span><img src="img/icon/link-512.png" width="20px"></span><span class="stock-name">苏宁云商</span><span class="stock-code">SZ002024</span>
+                                            <aside class="news-block-content">
+	                                            <p class="news-block-title">苏宁云商集团股份有限公司关于公司移动通信专售业务进展的说明公告以及关于其进展的的说明公告</p>
+	                                            <p class="news-block-originate">证券时报网  2014-02-07 20:39</p>
+                                            </aside>
+                                            </article>
+                                            
+                                            <article  class="row news-block">
+                                            <span><img src="img/icon/link-512.png" width="20px"></span><span class="stock-name">民生银行</span><span class="stock-code">SH600016</span>
+                                            <aside class="news-block-content">
+	                                            <p class="news-block-title">快讯：银行股全线下跌 平安银行领跌</p>
+	                                            <p class="news-block-originate">中国网  2014-02-07 10:39</p>
+                                            </aside>
+                                            
+                                            <footer class="news-footer"><span><img src="img/icon/refresh-512.png" width="20px"></span><span class="news-footer-load">加载更多</span></footer>
+                                            </article>
+                                            
+                                            </section>
+                                    </section>
+                                </section>
+                    </section>
+                    <!--end-body-->
+                    <!--end-暂时不要用iframe，感觉好麻烦-->
+                </section>
+                <!--end-body-section-->
+            </div>
+        </div>
+        <!--end-main-body-->
+    </body>
+
+</html>
