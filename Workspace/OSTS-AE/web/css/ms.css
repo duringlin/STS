@@ -1,41 +1,5 @@
-.navbar-style{
-	margin-bottom: 0px;/*去除多出来的20px margin*/
-}
-.nav-style{
-	padding: 10px 5px;
-	background-color: #434343;
-}
-.side-nav{
-	display: block;
-	margin: 0px;
-	padding: 0.77778rem 0px;
-	list-style-type: none;
-	list-style-position: inside;
-	color: #d2d2d2;
-}
-.side-nav a{
-    display:block;
-    padding:0.5em 2em;
-	text-decoration: none;
-	line-height: inherit;
-	color: #d2d2d2;
-}
-.side-nav li:hover > a:first-child,.side-nav li:active >a:first-child{
-	color: white;
-	background-color: #535353;
-}
-.side-nav li.heading{
-	padding: 2px 0px;
-	font-size: 0.6em;
-	color: #a0a0a0;
-	margin: 10px 5px;
-}
-.side-nav li.divider {
-    margin: 16px 0px;
-    border-top: 0px;
-	height: 0px;
-	padding: 0px;
-	list-style: none outside none;
+html,body{
+	height: 100%;
 }
 .section-body{
 	/* margin: 0 -15px; *//*为了抵消row的margin*/
@@ -45,15 +9,25 @@
 	height:100px;
 	color: white;
 }
+.section-header-wel .welcome{
+	padding: 10px 20px;
+}
+.section-header-wel .time{
+/* 	padding: 10px 20px; */
+}
 .section-header-pic{
 	background-color:#45aadf;
 	height:100px;
 }
 .section-report{
-	/* margin: 10px 10px; */
+	padding: 10px 10px;
+}
+.section-right{
+	background-color:#f7f7f7;
 }
 .section-news{
 	background:#f7f7f7;
+	padding: 10px 10px;
 }
 .report-yesterday{
 	padding: 5px 10px;
@@ -149,4 +123,7 @@
 .news-footer-load{
 	margin: 0px 8px;
 	color: #b5b5b5;
+}
+.reload,.refresh{
+	cursor: pointer;
 }

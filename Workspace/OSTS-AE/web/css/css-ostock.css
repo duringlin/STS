@@ -1,0 +1,44 @@
+html,body{
+	height: 100%;
+}
+.title{
+	background-color:#3894c5;
+	height:60px;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 0px;
+}
+
+.table-ostock{
+    text-align: right;
+}
+
+.table-ostock > tbody{
+	border-bottom: 1px solid #ddd;
+}
+
+.table-ostock > tbody > tr:first-child > th{
+	background-color: #fccd89;
+	color: #707070;
+	text-align: right;
+	border-top: inherit;
+}
+
+/**第一第二列居中**/
+.table-ostock > tbody > tr:first-child > th:first-child,
+.table-ostock > tbody > tr:first-child > th:first-child+th,
+.table-ostock > tbody > tr > td:first-child,
+.table-ostock > tbody > tr > td:first-child+td{
+	text-align: center
+}
+
+.table-ostock > tbody > tr > td >img{
+	cursor: pointer;
+}
+.section-footer{
+	text-align: center;
+}
+
+
+

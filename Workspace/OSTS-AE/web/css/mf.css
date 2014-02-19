@@ -1,3 +1,6 @@
+.wrapheight{
+	height: 100%;/**需要填充高度的可以加上这个样式**/
+}
 .container-index{
 	height: 300px;
 }
@@ -104,4 +107,47 @@ box-shadow: none;
 	.container-open{
 		padding: 20px 200px;
 	}
+	
+	/**nav css**/
+	.navbar-style{
+	margin-bottom: 0px;/*去除多出来的20px margin*/
+}
+.nav-style{
+	padding: 10px 5px;
+	background-color: #434343;
+	height: 100%;
+}
+.side-nav{
+	display: block;
+	margin: 0px;
+	padding: 0.77778rem 0px;
+	list-style-type: none;
+	list-style-position: inside;
+	color: #d2d2d2;
+}
+.side-nav a{
+    display:block;
+    padding:0.5em 2em;
+	text-decoration: none;
+	line-height: inherit;
+	color: #d2d2d2;
+}
+.side-nav li:hover > a:first-child,.side-nav li:active >a:first-child{
+	color: white;
+	background-color: #535353;
+}
+.side-nav li.heading{
+	padding: 2px 0px;
+	font-size: 0.6em;
+	color: #a0a0a0;
+	margin: 10px 5px;
+}
+.side-nav li.divider {
+    margin: 16px 0px;
+    border-top: 0px;
+	height: 0px;
+	padding: 0px;
+	list-style: none outside none;
+}
+
 

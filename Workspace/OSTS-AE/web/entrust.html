@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>
+            STS Online
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/mf.css">
+        <link rel="stylesheet" href="css/css-entrust.css">
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <div class="navbar navbar-default navbar-style" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            在线股票交易系统
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="请输入股票代码或简拼">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/JPY-512.png" width="18px">
+                                        1200,00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/polyline-512.png" width="18px">
+                                        4500,00
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        王大锤
+                                        <b class="caret">
+                                        </b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                修改资料
+                                            </a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                退出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/pic/example-user.jpeg" width="50px">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-header-->
+        <!--main-body-->
+        <div class="container wrapheight">
+            <div class="row wrapheight">
+                <!--nav-->
+                <nav class="col-md-2 nav-style">
+                    <ul class="side-nav">
+                        <li class="heading">
+                            概览
+                        </li>
+                        <li>
+                            <a href="preview.html">
+                                账户概览
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            市场信息
+                        </li>
+                        <li>
+                            <a href="stock.html">
+                                查看个股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="optional-stock.html">
+                                查看自选股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="holdings.html">
+                                查看持仓
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            交易
+                        </li>
+                        <li>
+                            <a href="buy.html">
+                                买入
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sell.html">
+                                卖出
+                            </a>
+                        </li>
+                        <li>
+                            <a href="entrust.html">
+                                委托管理
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--end-nav-->
+                <!--body-section-->
+                <section class="col-md-10">
+                    <!--暂时不要用iframe，感觉好麻烦-->
+                    <!--body-header-->
+                    <header class="row section-header">
+                        <p class="title">
+                            委托管理
+                            <span class="pull-right time-selector"><span>24小时</span><span>7天</span><span>30天</span></span>
+                        </p>
+                    </header>
+                    <!--end-body-header-->
+                    <!--body-->
+                    <!--自选股-->
+                    <section class="row">
+                        <table class="table table-hover table-responsive table-entrust">
+                            <tr>
+                                <th>
+                                    股票名称
+                                </th>
+                                <th>
+                                    交易类型
+                                </th>
+                                <th>
+                                    成交状态
+                                </th>
+                                <th>
+                                    委托数量
+                                </th>
+                                <th>
+                                    成交数量
+                                </th>
+                                <th>
+                                    委托价格
+                                </th>
+                                <th>
+                                    成交均价
+                                </th>
+                                <th>
+                                    委托时间
+                                </th>
+                                <th>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        大智慧
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SH601519
+                                    </p>
+                                </td>
+                                <td>
+                                    卖出
+                                </td>
+                                <td>
+                                全部成交
+                                </td>
+                                <td>
+                                    9000
+                                </td>
+                                <td>
+                                    9000
+                                </td>
+                                <td>
+                                    8.34
+                                </td>
+                                <td>
+                                    8.02
+                                </td>
+                                <td>
+                                    01-23 18:34:20
+                                </td>
+                                <td>
+                                    <img class="hidden" src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        苏宁云商
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SZ002024
+                                    </p>
+                                </td>
+                                <td>
+                                    买入
+                                </td>
+                                <td>
+                                    全部成交
+                                </td>
+                                <td>
+                                    3423
+                                </td>
+                                <td>
+                                3423
+                                </td>
+                                <td>
+                                    13.38
+                                </td>
+                                <td>
+                                    10.38
+                                </td>
+                                <td>
+                                    01-23 18:53:20
+                                </td>
+                                <td>
+                                    <img class="hidden" src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        莱宝高科
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SHZ002106
+                                    </p>
+                                </td>
+                                <td>
+                                卖出
+                                </td>
+                                <td>
+                                    委托取消
+                                </td>
+                                <td>
+                                    4343
+                                </td>
+                                <td>
+                                    345
+                                </td>
+                                <td>
+                                    14.18
+                                </td>
+                                <td>
+                                    14.36
+                                </td>
+                                <td>
+                                    01-23 22:34:24
+                                </td>
+                                
+                                <td>
+                                    <img class="hidden" src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        TCL集团
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SZ000100
+                                    </p>
+                                </td>
+                                <td>
+                                    卖出
+                                </td>
+                                <td>
+                                    部分成交
+                                </td>
+                                <td>
+                                    7654
+                                </td>
+                                <td>
+                                    4567
+                                </td>
+                                <td>
+                                    3.50
+                                </td>
+                                <td>
+                                    2.64
+                                </td>
+                                <td>
+                                    01-24 12:34:30
+                                </td>
+                               
+                                <td>
+                                    <img src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        高鸿股份
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SZ000851
+                                    </p>
+                                </td>
+                                <td>
+                                    买入
+                                </td>
+                                <td>
+                                    全部成交
+                                </td>
+                                <td>
+                                    8636
+                                </td>
+                                <td>
+                                    8636
+                                </td>
+                                <td>
+                                    15.12
+                                </td>
+                                <td>
+                                    16.12
+                                </td>
+                                <td>
+                                    01-24 13:14:24
+                                </td>
+                                
+                                <td>
+                                    <img class="hidden" src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        航空动力
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SH600893
+                                    </p>
+                                </td>
+                                <td>
+                                    卖出
+                                </td>
+                                <td>
+                                    尚未成交
+                                </td>
+                                <td>
+                                    4522
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    24.05
+                                </td>
+                                <td>
+                                    23.95
+                                </td>
+                                <td>
+                                    01-24 18:54:27
+                                </td>
+                                <td>
+                                    <img src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-stock-name">
+                                        华谊兄弟
+                                    </p>
+                                    <p class="table-stock-code">
+                                        SZ300027
+                                    </p>
+                                </td>
+                                <td>
+                                    买入
+                                </td>
+                                <td>
+                                    成交失败
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    40.71
+                                </td>
+                                <td>
+                                    39.71
+                                </td>
+                                <td>
+                                    01-23 19:44:50
+                                </td>
+                                <td>
+                                    <img class="hidden" src="img/icon/delete_database-512.png" width="15px">
+                                </td>
+                            </tr>
+                        </table>
+                        <!--end-自选股-->
+                        <!--分页-->
+                        <!--只有大于15条的时候才会出现分页-->
+                        <footer class="section-footer">
+                            <ul class="pagination pagination-sm">
+                                <li>
+                                    <a href="#">
+                                        &laquo;
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &raquo;
+                                    </a>
+                                </li>
+                            </ul>
+                        </footer>
+                        <!--end-分页-->
+                        <!--end-body-->
+                        <!--end-暂时不要用iframe，感觉好麻烦-->
+                    </section>
+                    <!--end-body-section-->
+            </div>
+        </div>
+        <!--end-main-body-->
+    </body>
+
+</html>

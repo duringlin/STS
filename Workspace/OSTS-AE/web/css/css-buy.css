@@ -1,0 +1,87 @@
+html,body{
+	height: 100%;
+}
+.bg-color{
+	background-color: #f3f3f3;
+}
+.title{
+	background-color:#3894c5;
+	height:60px;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 0px;
+}
+.section-five{
+    font-size: 0.5em;
+}
+
+.section-buy{
+	padding-left: 30px;
+}
+.section-five{
+	padding-right: 30px;
+}
+/*字体声明*/
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont";
+    font-size:16px;
+    font-style:normal;
+}
+
+.form-label{
+	color: #ff7243;
+}
+
+.buy{
+    margin-top: 30px;
+	border-left: 5px solid #3894c5;
+	background-color: #fdf9f3;
+	padding:90px 20px 20px 40px;
+}
+
+.buy-label-block{
+	display: inline-block;
+	padding-top: 7px;
+	cursor: pointer;
+}
+.buy-total-block{
+	font-size: 1.3em;
+	padding-right: 20px;
+	padding-top: 7px;
+ 	text-align: right;
+	
+	
+}
+.buy-total{
+/* 	margin: 50px 20px 30px 0px; */
+}
+
+.five{
+	border-left: 5px solid #3894c5;
+	background-color: #fdf9f3;
+	margin-top: 30px;
+	padding:5px 20px 0px 20px;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.divier{
+    float: right;
+	width: 350px;
+	margin: 0px 0px 25px 0px;
+	padding: 0px;
+}
+.reload{
+	cursor: pointer;
+}

@@ -1,0 +1,62 @@
+html,body{
+	height: 100%;
+}
+.title{
+	background-color:#3894c5;
+	height:60px;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 0px;
+}
+
+.table-holding{
+    text-align: right;
+    color: #535353;
+}
+
+.table-holding > tbody{
+	border-bottom: 1px solid #ddd;
+}
+
+.table-holding > tbody > tr > td{
+	vertical-align: middle;
+	font-size: 1.2em;
+}
+
+.table-holding > tbody > tr:first-child > th{
+	background-color: #fccd89;
+	color: #707070;
+	text-align: right;
+	border-top: inherit;
+}
+
+/**第一第二列居中**/
+.table-holding > tbody > tr:first-child > th:first-child,
+.table-holding > tbody > tr:first-child > th:first-child+th,
+.table-holding > tbody > tr > td:first-child,
+.table-holding > tbody > tr > td:first-child+td{
+	text-align: center
+}
+
+.table-holding > tbody > tr > td >img{
+	cursor: pointer;
+}
+
+.table-stock-name,.table-stock-code{
+	margin: 0px;
+}
+.table-stock-name{
+	font-size: 0.5em;
+}
+.table-stock-code{
+	font-size: 0.1em;
+}
+.section-footer{
+	text-align: center;
+}
+
+
+
+
+

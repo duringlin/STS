@@ -1,0 +1,67 @@
+html,body{
+	height: 100%;
+}
+.section-header-stock-name,.section-header-stock-info{
+	background-color:#3894c5;
+	height:60px;
+	color: white;
+}
+.section-header-stock-price{
+	background-color:#fff;
+	height:60px;
+}
+.section-header-stock-name .stock-name{
+    margin: 0px;
+	font-size: 1.8em;
+}
+.section-header-stock-name .stock-code{
+    margin: 5px 0px 0px 0px;
+	font-size: 0.6em;
+}
+.section-header-stock-price .stock-price{
+	font-size: 2em;
+	text-align: center;
+	color: #eb6877;
+	margin: 0px;
+}
+.section-header-stock-price .stock-change{
+	font-size: 0.2em;
+	text-align: center;
+	color: #eb6877;
+	margin: 0px;
+}
+
+.section-header-stock-price .stock-change .price{
+    color:#32b16c;
+}
+.section-header-stock-price .stock-change .rate{
+    color:#eb6877;
+}
+
+.section-header-stock-info{
+	padding: 5px 10px;
+}
+
+.section-five{
+	
+}
+
+.section-five > h3{
+	margin: 10px 20px;
+}
+
+.section-five a{
+	display:block;
+	text-decoration: none;
+	line-height: inherit;
+	color: #707070;
+}
+
+.section-five a:hover{
+	color: #448aca;
+}
+
+.section-five .items{
+	margin:5px 20px;
+	color: #707070;
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>
+            STS Online
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/mf.css">
+        <link rel="stylesheet" href="css/css-stock.css">
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <div class="navbar navbar-default navbar-style" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            在线股票交易系统
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="请输入股票代码或简拼">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/JPY-512.png" width="18px">
+                                        1200,00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/polyline-512.png" width="18px">
+                                        4500,00
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        王大锤
+                                        <b class="caret">
+                                        </b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                修改资料
+                                            </a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                退出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/pic/example-user.jpeg" width="50px">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-header-->
+        <!--main-body-->
+        <div class="container wrapheight">
+            <div class="row wrapheight">
+                <!--nav-->
+                <nav class="col-md-2 nav-style">
+                    <ul class="side-nav">
+                        <li class="heading">
+                            概览
+                        </li>
+                        <li>
+                            <a href="preview.html">
+                                账户概览
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            市场信息
+                        </li>
+                        <li>
+                            <a href="stock.html">
+                                查看个股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="optional-stock.html">
+                                查看自选股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="holdings.html">
+                                查看持仓
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            交易
+                        </li>
+                        <li>
+                            <a href="buy.html">
+                                买入
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sell.html">
+                                卖出
+                            </a>
+                        </li>
+                        <li>
+                            <a href="entrust.html">
+                                委托管理
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--end-nav-->
+                <!--body-section-->
+                <section class="col-md-10">
+                    <!--暂时不要用iframe，感觉好麻烦-->
+                    <!--body-header-->
+                    <header class="row section-header">
+                        <!--头部-股票名称-->
+                        <section class="col-md-4 section-header-stock-name">
+                            <p class="stock-code">
+                                SH601519
+                                <span>
+                                    <img src="img/icon/plus-512-white.png" width="15px">
+                                </span>
+                            </p>
+                            <p class="stock-name">
+                                苏宁云商
+                            </p>
+                        </section>
+                        <!--end-头部-股票名称->
+                        <!--头部-股票价格-->
+                        <section class="col-md-2 section-header-stock-price">
+                            <p class="stock-price">
+                                8.82
+                            </p>
+                            <p class="stock-change">
+                                <span class="price">
+                                    +0.80
+                                </span>
+                                <span class="rate">
+                                    +9.98%
+                                </span>
+                            </p>
+                        </section>
+                        <!--end-头部-股票价格-->
+                        <!--头部-股票信息-->
+                        <section class="col-md-6 section-header-stock-info">
+                            <ul class="list-inline stock-info">
+                                <li>
+                                    今开：
+                                </li>
+                                <li>
+                                    8.50
+                                </li>
+                                <li>
+                                    最高：
+                                </li>
+                                <li>
+                                    8.82
+                                </li>
+                                <li>
+                                    涨停：
+                                </li>
+                                <li>
+                                    8.82
+                                </li>
+                                <li>
+                                    成交量：
+                                </li>
+                                <li>
+                                    96.06万手
+                                </li>
+                            </ul>
+                            <ul class="list-inline stock-info">
+                                <li>
+                                    昨收：
+                                </li>
+                                <li>
+                                    8.02
+                                </li>
+                                <li>
+                                    最低：
+                                </li>
+                                <li>
+                                    8.38
+                                </li>
+                                <li>
+                                    跌停：
+                                </li>
+                                <li>
+                                    7.22
+                                </li>
+                                <li>
+                                    成交额：
+                                </li>
+                                <li>
+                                    8.37亿元
+                                </li>
+                            </ul>
+                        </section>
+                        <!--end-头部-股票信息-->
+                    </header>
+                    <!--end-body-header-->
+                    <!--body-->
+                    <!--走势和盘口-->
+                    <section class="row">
+                        <!--股票走势-->
+                        <section class="col-md-9">
+                            <section class="row-block">
+                                走势
+                            </section>
+                        </section>
+                        <!--五档盘口-->
+                        <section class="col-md-3 section-five">
+                            <section class="row-block">
+                                <h3>
+                                    五档盘口
+                                </h3>
+                                <table class="table table-hover table-condensed">
+                                    <tr>
+                                        <td>
+                                            卖⑤
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖④
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖③
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖②
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖①
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            成交
+                                        </td>
+                                        <td>
+                                            8.82
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买①
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买②
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买③
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买④
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买⑤
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                </table>
+                            </section>
+                        </section>
+                    </section>
+                    <!--end-走势和盘口-->
+                    <hr>
+                    <!--个股资讯-->
+                    <section class="row section-news">
+                        <h3>
+                            个股资讯
+                        </h3>
+                        <section>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-inline items">
+                                        <li>
+                                            <a href="#">
+                                                元宵节“邂逅”情人节 三类概念股蠢蠢欲动
+                                            </a>
+                                        </li>
+                                        <li class="pull-right">
+                                            2013-04-23 18:38:56
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-inline items">
+                                        <li>
+                                            <a href="#">
+                                                发力O2O本地生活 苏宁云商收购满座网
+                                            </a>
+                                        </li>
+                                        <li class="pull-right">
+                                            2013-04-22 08:18:26
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-inline items">
+                                        <li>
+                                            <a href="#">
+                                                上周五沪深两市共32只个股融资买入额过亿
+                                            </a>
+                                        </li>
+                                        <li class="pull-right">
+                                            2013-04-21 12:32:53
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-inline items">
+                                        <li>
+                                            <a href="#">
+                                                12家公司"抢夺"快递牌照 易迅主内苏宁云商攻外
+                                            </a>
+                                        </li>
+                                        <li class="pull-right">
+                                            2013-04-20 15:23:16
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                        <!--end-个股资讯-->
+                        <!--end-body-->
+                        <!--end-暂时不要用iframe，感觉好麻烦-->
+                    </section>
+                    <!--end-body-section-->
+            </div>
+        </div>
+        <!--end-main-body-->
+    </body>
+
+</html>

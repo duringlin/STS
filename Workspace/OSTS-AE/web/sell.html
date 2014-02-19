@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>
+            STS Online
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/mf.css">
+        <link rel="stylesheet" href="css/css-sell.css">
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <div class="navbar navbar-default navbar-style" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            在线股票交易系统
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="请输入股票代码或简拼">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/JPY-512.png" width="18px">
+                                        1200,00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/polyline-512.png" width="18px">
+                                        4500,00
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        王大锤
+                                        <b class="caret">
+                                        </b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                修改资料
+                                            </a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                退出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/pic/example-user.jpeg" width="50px">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-header-->
+        <!--main-body-->
+        <div class="container wrapheight bg-color">
+            <div class="row wrapheight">
+                <!--nav-->
+                <nav class="col-md-2 nav-style">
+                    <ul class="side-nav">
+                        <li class="heading">
+                            概览
+                        </li>
+                        <li>
+                            <a href="preview.html">
+                                账户概览
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            市场信息
+                        </li>
+                        <li>
+                            <a href="stock.html">
+                                查看个股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="optional-stock.html">
+                                查看自选股
+                            </a>
+                        </li>
+                        <li>
+                            <a href="holdings.html">
+                                查看持仓
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li class="heading">
+                            交易
+                        </li>
+                        <li>
+                            <a href="buy.html">
+                                买入
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sell.html">
+                                卖出
+                            </a>
+                        </li>
+                        <li>
+                            <a href="entrust.html">
+                                委托管理
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--end-nav-->
+                <!--body-section-->
+                <section class="col-md-10">
+                    <!--暂时不要用iframe，感觉好麻烦-->
+                    <!--body-header-->
+                    <header class="row section-header">
+                        <p class="title">
+                            卖出
+                        </p>
+                    </header>
+                    <!--end-body-header-->
+                    <!--body-->
+                    <section class="row">
+                        <section class="col-md-8 section-sell">
+                            <div class="sell">
+                                <!--sell-form-->
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="inputStockCode" class="col-sm-2 control-label form-label">
+                                            股票代码
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="inputStockCode" placeholder="请输入股票代码或简拼">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPrice" class="col-sm-2 control-label form-label">
+                                            卖出价格
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="inputPrice" placeholder="最新价">
+                                        </div>
+                                        <span class="sell-label-block">
+                                            <i class="iconfont">
+                                                &#xf01f8; 5.6
+                                            </i>
+                                        </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount" class="col-sm-2 control-label form-label">
+                                            卖出股数
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="inputCount" placeholder="0">
+                                        </div>
+                                        <span class="sell-label-block">
+                                            <i class="iconfont">
+                                                &#xf0035; 1200
+                                            </i>
+                                        </span>
+                                    </div>
+                                    <hr class="divier">
+                                    <div class="form-group sell-total">
+                                        <div class="col-md-offset-6">
+                                        
+                                        <span class="sell-total-block">
+                                            <i class="iconfont">
+                                                &#xf0150; 204,344.49
+                                            </i>
+                                        </span>
+                                        <button type="submit" class="btn btn-success sell-total-btn">
+                                            卖出
+                                        </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--end-sell-form-->
+                            </div>
+                        </section>
+                        <section class="col-md-4 section-five">
+                            <!--五档盘口-默认隐藏 hidden-->
+                            <div class="five">
+                                <h3>
+                                    五档盘口
+                                    <span class="pull-right reload"><img src="img/icon/reload-512.png" width="15px"></span>
+                                </h3>
+                                
+                                <table class="table table-hover table-condensed">
+                                    <tr>
+                                        <td>
+                                            卖⑤
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖④
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖③
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖②
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            卖①
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            成交
+                                        </td>
+                                        <td>
+                                            8.82
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买①
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买②
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买③
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买④
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            买⑤
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                        <td>
+                                            --
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
+                        <!--end-五档盘口-->
+                    </section>
+                </section>
+                <!--end-body-->
+                <!--end-暂时不要用iframe，感觉好麻烦-->
+                </section>
+                <!--end-body-section-->
+            </div>
+        </div>
+        <!--end-main-body-->
+    </body>
+
+</html>
