@@ -1,6 +1,31 @@
 html,body{
 	height: 100%;
 }
+
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'quanticoregular';
+    src: url('../fonts/quantico-regular-webfont.eot');
+    src: url('../fonts/quantico-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quantico-regular-webfont.woff') format('woff'),
+         url('../fonts/quantico-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quantico-regular-webfont.svg#quanticoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+
+
+.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+
 .section-body{
 	/* margin: 0 -15px; *//*为了抵消row的margin*/
 }
@@ -10,17 +35,18 @@ html,body{
 	color: white;
 }
 .section-header-wel .welcome{
-	padding: 10px 20px;
+	padding: 20px 20px 0px 20px;
 }
 .section-header-wel .time{
 /* 	padding: 10px 20px; */
+font-family: "quanticoregular";
 }
 .section-header-pic{
 	background-color:#45aadf;
 	height:100px;
 }
 .section-report{
-	padding: 10px 10px;
+	padding: 10px 20px;
 }
 .section-right{
 	background-color:#f7f7f7;
@@ -42,6 +68,7 @@ html,body{
 	color: #c490bf;
 	font-size: 3em;
 	text-align: center;
+	font-family: "quanticoregular";
 }
 .report-yesterday-note{
 	font-size: 0.6em;
@@ -49,12 +76,14 @@ html,body{
 	text-align: right;
 }
 .report-yesterday-change{
-	color: #eb6877;
+	color: #535353;
+	font-family: "quanticoregular";
 }
 .report-yesterday-overage{
 	font-size: 3em;
-	color: #89c997;
+	color: #84ccc9;
 	text-align: center;
+	font-family: "quanticoregular";
 }
 .report-positions{
 	padding: 20px 20px;
@@ -78,11 +107,13 @@ html,body{
 	font-size: 2em;
 	color: #535353;
 	text-align: right;
+/* 	font-family: "quanticoregular"; */
 }
 .table-positions .stock-change{
 	font-size: 2em;
 	color: #eb6877;
 	text-align: right;
+/* 	font-family: "quanticoregular"; */
 }
 .table-positions .stock-code{
 	font-size: 0.8em;
@@ -112,6 +143,12 @@ html,body{
 .news-block .news-block-title{
 	font-size: 1em;
 	color: #707070;
+	
+	cursor: pointer;
+}
+.news-block .news-block-title:hover{
+	font-size: 1em;
+	color: #252525;
 }
 .news-block .news-block-originate{
 	font-size: 0.5em;

@@ -85,3 +85,9 @@ html,body{
 .reload{
 	cursor: pointer;
 }
+
+/**重写index的btn样式**/
+.signin-btn{
+	width: 80px;
+	margin-top: 0px;
+}

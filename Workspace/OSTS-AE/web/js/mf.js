@@ -55,3 +55,44 @@ function clearForm(form)
     }
     
 }
+
+/**判断涨跌 0 无变化 1 涨 -1 跌**/
+function judgeChange(mValue){
+	if(parseFloat(mValue)>0){
+		return 1;
+	}
+	else if(parseFloat(mValue)<0){
+		return -1;
+	}
+	else{
+	return 0;
+	}
+}
+
+/**根据涨跌改变颜色**/
+function changeColor(mValue,mElement){
+	if(judgeChange(mValue)==1){
+		mElement.style.color="#eb6877";
+	}
+	else if(judgeChange(mValue)==-1){
+		mElement.style.color="#80c269";
+	}
+	else{
+		mElement.style.color="#535353";
+	}
+}
+
+/**根据涨跌改变内容**/
+function changeValue(mValue,mElement,mChangeValues){
+    if(mChangeValues.length!=3)
+    return;
+	if(judgeChange(mValue)==1){
+		mElement.innerHTML=mChangeValues[2];
+	}
+	else if(judgeChange(mValue)==-1){
+		mElement.innerHTML=mChangeValues[0];
+	}
+	else{
+		mElement.innerHTML=mChangeValues[1];
+	}
+}

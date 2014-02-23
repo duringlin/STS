@@ -149,5 +149,36 @@ box-shadow: none;
 	padding: 0px;
 	list-style: none outside none;
 }
+.index-section-news{
+	padding:20px 0px;
+}
+.index-section-news li{
+	margin: 10px 0px;
+}
+
+.index-section-news li a{
+	display:block;
+	text-decoration: none;
+	line-height: inherit;
+	color: #707070;
+}
+
+.index-section-news li a:hover{
+	display:block;
+	text-decoration: none;
+	line-height: inherit;
+	color: #448aca;
+
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
 
 

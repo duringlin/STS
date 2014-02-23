@@ -1,3 +1,14 @@
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+
+
 html,body{
 	height: 100%;
 }
@@ -12,11 +23,15 @@ html,body{
 }
 .section-header-stock-name .stock-name{
     margin: 0px;
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
 .section-header-stock-name .stock-code{
     margin: 5px 0px 0px 0px;
 	font-size: 0.6em;
+}
+.section-header-stock-name .stock-code i{
+	cursor: pointer;
+	color: #fff799; /**收藏颜色**/
 }
 .section-header-stock-price .stock-price{
 	font-size: 2em;

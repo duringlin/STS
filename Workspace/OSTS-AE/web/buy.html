@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/mf.css">
-        <link rel="stylesheet" href="css/css-buy.css">
+        <link rel="stylesheet" href="css/css-buy-sell.css">
         <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
         </script>
         <script src="js/bootstrap.min.js">
@@ -162,10 +162,29 @@
                         </p>
                     </header>
                     <!--end-body-header-->
+                    <!--警告框-->
+                    <section class="attention">
+                    <div class="alert alert-warning alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>注意! </strong> 现在是非交易时间，您的委托将进入交易队列。
+</div>
+<!--根据时间判断是否显示提示-->
+<script type="text/javascript">
+var d=new Date();
+if(d.getHours()<9 || d.getHours()>=15|| (12<=d.getHours() && d.getHours()<13)|| (d.getHours()==9 && d.getMinutes()<30) || (d.getHours()==11 && d.getMinutes()>=30)){
+}
+else{
+	$(".alert").alert('close');
+	
+}
+ 
+</script>
+                    </section>
+                    <!--end-警告框-->
                     <!--body-->
                     <section class="row">
-                        <section class="col-md-8 section-buy">
-                            <div class="buy">
+                        <section class="col-md-8 section-buy-sell">
+                            <div class="buy-sell">
                                 <!--buy-form-->
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">
@@ -183,7 +202,7 @@
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control" id="inputPrice" placeholder="最新价">
                                         </div>
-                                        <span class="buy-label-block">
+                                        <span class="buy-sell-label-block">
                                             <i class="iconfont">
                                                 &#xf01f8; 5.6
                                             </i>
@@ -196,22 +215,22 @@
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control" id="inputCount" placeholder="0">
                                         </div>
-                                        <span class="buy-label-block">
+                                        <span class="buy-sell-label-block">
                                             <i class="iconfont">
                                                 &#xf0035; 1200
                                             </i>
                                         </span>
                                     </div>
                                     <hr class="divier">
-                                    <div class="form-group buy-total">
+                                    <div class="form-group buy-sell-total">
                                         <div class="col-md-offset-6">
                                         
-                                        <span class="buy-total-block">
+                                        <span class="buy-sell-total-block">
                                             <i class="iconfont">
                                                 &#xf0150; 204,344.49
                                             </i>
                                         </span>
-                                        <button type="submit" class="btn btn-success buy-total-btn">
+                                        <button type="submit" class="signin-btn buy-sell-total-btn ">
                                             购买
                                         </button>
                                         </div>

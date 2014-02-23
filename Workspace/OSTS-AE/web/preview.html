@@ -17,6 +17,8 @@
         </script>
         <script src="js/bootstrap.min.js">
         </script>
+        <script src="js/mf.js">
+        </script>
         <style type="text/css">
         </style>
     </head>
@@ -65,7 +67,7 @@
                                     </a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <a id="login-user-name" href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         王大锤
                                         <b class="caret">
                                         </b>
@@ -104,7 +106,7 @@
                         <li class="heading">
                             概览
                         </li>
-                        <li>
+                        <li >
                             <a href="preview.html">
                                 账户概览
                             </a>
@@ -153,20 +155,70 @@
                 </nav>
                 <!--end-nav-->
                 <!--body-section-->
-                <section class="col-md-5 wrapheight">
+                <section class="col-md-6 wrapheight">
                     <!--暂时不要用iframe，感觉好麻烦-->
                     <!--body-header-->
                     <header class="row">
                         <!--头部-左边-->
                         <section class="section-header-wel">
                             <p class="h2 welcome">
-                                早上好，王大锤！
+                            <!--获取问候语-->
+                                     <script language="JavaScript" type="text/javascript">
+             var date,str;
+             var d = new Date();
+
+             date = d.getHours()
+             if(date<5 || date >21)
+             {
+	             str="夜深了";
+             }
+             else if(date >5 && date<12){
+	             str="早上好"
+             }
+             else if(date ==12){
+	             str="中午好"
+             }
+             else if(date >12 && date<18){
+	             str="下午好"
+             }
+             else{
+	             str="晚上好"
+             }
+             document.write(str+","+document.getElementById("login-user-name").firstChild.nodeValue+"!");
+
+       </script>
+
+                                
                             </p>
                             <div class="col-md-3 col-md-offset-9">
                                 <p class="h3 time">
-                                    18:00
+                                <!--获取当前时间-->
+                                     <script language="JavaScript" type="text/javascript">
+             var date;
+             var d = new Date();
+
+             date = d.getHours() +":" + d.getMinutes();
+             document.write(date);
+
+       </script>
                                     <sup>
-                                        Fri
+                                    <!--星期几-->
+                                        <script type="text/javascript">
+
+var d=new Date()
+
+var weekday=new Array(7)
+weekday[0]="Sun."
+weekday[1]="Mon."
+weekday[2]="Tue."
+weekday[3]="Wed."
+weekday[4]="Thu."
+weekday[5]="Fri."
+weekday[6]="Sat."
+
+document.write(weekday[d.getDay()])
+
+</script>
                                     </sup>
                                 </p>
                             </div>
@@ -193,9 +245,17 @@
                                     </p>
                                     <p class="report-yesterday-note">
                                         与昨日相比
-                                        <span class="report-yesterday-change">
-                                            +9.8%
+                                        
+                                        <span id="report-yesterday-change" class="report-yesterday-change">
+                                        <i id="report-yesterday-change-iconfont" class="iconfont">&#xf028d;</i>
+                                            <span id="report-yesterday-change-value">-9.8%</span>
                                         </span>
+                                        <!--根据涨跌改变颜色-->
+                                        <script type="text/javascript">
+                                       changeColor(document.getElementById("report-yesterday-change-value").firstChild.nodeValue,document.getElementById("report-yesterday-change"));
+                                       var changeValues=new Array("&#xf028c;","&#xf01b1;","&#xf028d;");
+                                       changeValue(document.getElementById("report-yesterday-change-value").firstChild.nodeValue,document.getElementById("report-yesterday-change-iconfont"),changeValues);
+                                        </script>
                                     </p>
                                     <p class="report-yesterday-lable">
                                         账户余额
@@ -204,7 +264,7 @@
                                         <span>
                                             <img src="img/icon/JPY-512.png" width="30px">
                                         </span>
-                                        12,3833.00
+                                        12,833.00
                                     </p>
                                 </div>
                             </section>
@@ -214,7 +274,7 @@
                                 </h4>
                                 <div class="row-block report-positions">
                                     <div class="table-responsive">
-                                        <table class="table-positions">
+                                        <table id="table-hodings" class="table-positions">
                                             <tr>
                                                 <td class="stock-name">
                                                     大智慧
@@ -264,6 +324,16 @@
                                                 </td>
                                             </tr>
                                         </table>
+                                        <!--根据涨跌改变颜色-->
+                                         <script type="text/javascript">
+                                         var x=document.getElementById("table-hodings").rows;
+                                         for(var i=0;i<x.length;i=i+2){
+                                         changeColor(x[i].cells[2].innerText,x[i].cells[1]);
+                                       changeColor(x[i].cells[2].innerText,x[i].cells[2]);
+                                         }
+                                      
+                                        </script>
+
                                     </div>
                                 </div>
                             </section>
@@ -274,7 +344,7 @@
                 </section>
                 <!--end-body-section-->
                 <!--right-section-->
-                <section class="col-md-5 wrapheight section-right">
+                <section class="col-md-4 wrapheight section-right">
                     <!--暂时不要用iframe，感觉好麻烦-->
                     <!--body-header-->
                     <header class="row">
