@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css/mf.css">
 <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="http://127.0.0.1:8000/_/js/reloader.js"></script>
+<script src="js/chart-index.js">
+        </script>
+        <script src="js/highcharts.js">
+        </script>
+
   </head>
   <body>
 	  <div class="navbar navbar-default" role="navigation">
@@ -55,7 +59,12 @@
 		      </div>
 		      <!--占位-->
 		      <div class="trading-body">
-		      <img src="img/pic/example-trading.png" height="200px">
+<!--绘制走势图 -->
+<div id="trade" style="height:250px;">
+	                                <script type="text/javascript">
+	                                creatChart();
+	                                </script>
+</div>
 		      </div>
 		      <!--占位-->
 	      </section>
