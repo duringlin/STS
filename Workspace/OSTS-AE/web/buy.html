@@ -16,6 +16,7 @@
         <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
         </script>
         <script src="js/bootstrap.min.js">
+        </script><script src="js/mf.js">
         </script>
         <style type="text/css">
         </style>
@@ -52,7 +53,11 @@
                                 <li>
                                     <form class="navbar-form navbar-left" role="search">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="请输入股票代码或简拼">
+                                             <input id="stock-search" type="text" class="form-control" data-provide="typeahead" data-items="4"   placeholder="请输入股票代码或简拼">
+                                            <script type="text/javascript">
+       dropList('#stock-search');
+        </script>
+
                                         </div>
                                     </form>
                                 </li>
