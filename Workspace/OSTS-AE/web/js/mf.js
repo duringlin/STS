@@ -1,3 +1,8 @@
+<!--屏蔽IE浏览器-->
+    <!--[if IE]>
+  <script language='javascript'>document.location ="no-ie.html" </script>
+  <![endif]-->
+
 /**清空表单**/
 function clearForm(form)
 {

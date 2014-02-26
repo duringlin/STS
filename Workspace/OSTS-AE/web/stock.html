@@ -26,6 +26,10 @@
     </head>
     
     <body>
+    <!--屏蔽IE浏览器-->
+    <!--[if IE]>
+  <script language='javascript'>document.location ="no-ie.html" </script>
+  <![endif]-->
         <!--header-->
         <header>
             <div class="navbar navbar-default navbar-style" role="navigation">
@@ -118,7 +122,7 @@
                         <li class="heading">
                             市场信息
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="stock.html">
                                 查看个股
                             </a>
@@ -254,6 +258,7 @@
                                 <div id="trend">
 <!--绘制走势图 -->
 	                                <script type="text/javascript">
+	                                /**传入的参数**/
 	                                creatChart();
 	                                </script>
                                 </div>

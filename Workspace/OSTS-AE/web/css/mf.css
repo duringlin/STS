@@ -136,6 +136,12 @@ box-shadow: none;
 	color: white;
 	background-color: #535353;
 }
+
+.side-nav li.active{
+	color: white;
+	background-color: #535353;
+}
+
 .side-nav li.heading{
 	padding: 2px 0px;
 	font-size: 0.6em;

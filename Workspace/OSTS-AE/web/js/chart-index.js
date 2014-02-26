@@ -3,7 +3,6 @@ function creatChart(){
 var chart;
 var x_arr=[];
 var y_arr=[];
-var y_arrp=['-10%','-5%','0','5%','10%'];
 
 /**绘制图标**/
 $(function () {
@@ -23,6 +22,7 @@ $(function () {
                 type: 'line',
                
  marginTop:30,
+ marginRight:20,
                 events: {
                     load:loadTime
                 }
@@ -47,12 +47,12 @@ $(function () {
                 tickInterval: step,
                 tickmarkPlacement:'on' /**数值显示在刻度上还是中间**/
             },
-            yAxis: [{
+            yAxis: {
            /*  categories:y_arr, */
             tickmarkPlacement:'on', /**数值显示在刻度上还是中间**/
-            max:6.82*(1+0.1),
-            min:6.82*(1-0.1),
-            step:6.82*(1+0.05),
+            max:2800*(1+0.1),
+            min:2800*(1-0.1),
+            step:2800*(1+0.05),
             showFirstLabel: true,
                 title:{
 	                enabled:false
@@ -60,49 +60,22 @@ $(function () {
                 allowDecimals: true,
                 labels: {
                         formatter: function() {
-                            if (this.value >6.82) {
-                                return '<span style="fill: red;">' + Highcharts.numberFormat(this.value, 2, '.') + '</span>';
+                            if (this.value >2800) {
+                                return '<span style="fill: red;">' + Highcharts.numberFormat(this.value, 0, '.') + '</span>';
                                 }
-                            else if(this.value <6.82){
-                                return '<span style="fill: green;">' + Highcharts.numberFormat(this.value, 2, '.')+ '</span>';
-                            }else if(this.value =6.82){
-                                return '<span style="fill: black;">' + Highcharts.numberFormat(this.value, 2, '.')+ '</span>';
+                            else if(this.value <2800){
+                                return '<span style="fill: green;">' + Highcharts.numberFormat(this.value, 0, '.')+ '</span>';
+                            }else if(this.value =2800){
+                                return '<span style="fill: black;">' + Highcharts.numberFormat(this.value, 0, '.')+ '</span>';
                             } else {
                                 return this.value;
                             }
                         }
                     }
-            },{
-           /*  categories:y_arr, */
-            tickmarkPlacement:'on', /**数值显示在刻度上还是中间**/
-            max:7.50,
-            min:6.14,
-            step:6.82*(1+0.05),
-            showFirstLabel: true,
-                title:{
-	                enabled:false
-                },
-                allowDecimals: true,
-                opposite: true, /**该条y轴是反向的，即位于右边**/
-                labels: {
-                        formatter: function() {
-                            if (this.value >6.82) {
-                                return '<span style="fill: red;">' + '+'+Highcharts.numberFormat((this.value/6.82-1)*100, 2, '.') +'%'+ '</span>';
-                                }
-                            else if(this.value <6.82){
-                                return '<span style="fill: green;">' + '-'+Highcharts.numberFormat((1-this.value/6.82)*100, 2, '.')+'%'+ '</span>';
-                            }else if(this.value =6.82){
-                                return '<span style="fill: black;">' +'+'+ Highcharts.numberFormat((1-this.value/6.82)*100, 2, '.')+'%'+ '</span>';
-                            } else {
-                                return this.value;
-                            }
-                        }
-                    }
-                
-            }],
+            },
             tooltip: {
                 formatter: function() {
-                    return '<b>'+ this.series.name+'  '+this.x  +'</b><br/>'+'  价格：'+ Highcharts.numberFormat(this.y, 2, '.') +'  涨幅：';
+                    return '<b>'+ this.series.name+'  '+this.x  +'</b><br/>'+'  点数：'+ Highcharts.numberFormat(this.y, 0, '.');
                 }
             },
             legend: { /**图例**/
@@ -135,12 +108,7 @@ $(function () {
                 enabled: false
             },
            
-            series: [{/**数据列选项**/
-                name: Highcharts.dateFormat('%Y-%m-%d',new Date()),
-                type: 'area',
-                data: [],
-                yAxis: 1
-            },{
+            series: [{
 	           name: Highcharts.dateFormat('%Y-%m-%d',new Date()),
                 type: 'area',
                 data: []
@@ -188,7 +156,7 @@ function setXArr(){
 
 /**根据昨天收盘价格计算今天的涨跌区间**/
 function setYArr(){
-	var orginData=6.82;
+	var orginData=2800;
 	y_arr.push((orginData * (1-0.1)).toFixed(2));
 	y_arr.push((orginData * (1-0.05)).toFixed(2));
 	y_arr.push(orginData+'');
@@ -199,7 +167,7 @@ function setYArr(){
 /**获取第一次数据**/
 function getFirstData(){
     var data = [];
-    var y_mx=Math.random()*(6.82*(1+0.1)-6.82*(1-0.1))+6.82*(1-0.1);
+    var y_mx=Math.random()*(2800*(1+0.1)-2800*(1-0.1))+2800*(1-0.1);
     var i;
     
     for (i = 0; i <= 0; i++) {
@@ -220,7 +188,7 @@ function getData(){
     
     //获取最大值
     var series_mx = chart.series[0];
-    var y_mx=Math.random()*(6.82*(1+0.1)-6.82*(1-0.1))+6.82*(1-0.1);
+    var y_mx=Math.random()*(2800*(1+0.1)-2800*(1-0.1))+2800*(1-0.1);
     
     series_mx.addPoint([current_point, y_mx], true, false);
     
