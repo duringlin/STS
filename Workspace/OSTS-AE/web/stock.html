@@ -183,17 +183,24 @@
                         <!--end-头部-股票名称->
                         <!--头部-股票价格-->
                         <section class="col-md-2 section-header-stock-price">
-                            <p class="stock-price">
+                            <p id="stock-price" class="stock-price">
                                 8.82
                             </p>
                             <p class="stock-change">
-                                <span class="price">
+                                <span id="stock-price-price" class="price">
                                     +0.80
                                 </span>
-                                <span class="rate">
+                                <span id="stock-price-rate" class="rate">
                                     +9.98%
                                 </span>
                             </p>
+                                                                    <!--根据涨跌改变颜色-->
+                                        <script type="text/javascript">
+                                       changeColor(document.getElementById("stock-price-rate").firstChild.nodeValue,document.getElementById("stock-price"));
+                                       changeColor(document.getElementById("stock-price-rate").firstChild.nodeValue,document.getElementById("stock-price-price"));
+                                       changeColor(document.getElementById("stock-price-rate").firstChild.nodeValue,document.getElementById("stock-price-rate"));
+                                        </script>
+
                         </section>
                         <!--end-头部-股票价格-->
                         <!--头部-股票信息-->
@@ -267,7 +274,13 @@
 	                                creatChart();
 	                                </script>
                                 </div>
-                                
+                                <span class="time-selector"><span id="btn-today" >今日</span><span id="btn-week">本周</span><span id="btn-month">本月</span></span>
+                                 <script type="text/javascript">
+	                                /**切换试图**/
+	                                $(document).ready(function(){
+  
+});
+	                                </script>
                             </section>
                         </section>
                         <!--五档盘口-->

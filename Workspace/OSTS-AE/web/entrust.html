@@ -174,7 +174,7 @@
                     <!--body-->
                     <!--自选股-->
                     <section class="row">
-                        <table class="table table-hover table-responsive table-entrust">
+                        <table id="table-entrust" class="table table-hover table-responsive table-entrust">
                             <tr>
                                 <th>
                                     股票名称
@@ -445,6 +445,14 @@
                                 </td>
                             </tr>
                         </table>
+                         <!--根据涨跌改变颜色-->
+                                        <script type="text/javascript">
+                                        var x=document.getElementById("table-entrust").rows;
+                                         for(var i=1;i<x.length;i++){
+                                       changeColorInEntrust(x[i].cells[2]);
+                                       }
+                                        </script>
+
                         <!--end-自选股-->
                         <!--分页-->
                         <!--只有大于15条的时候才会出现分页-->

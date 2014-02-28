@@ -174,7 +174,7 @@
                     <!--body-->
                     <!--自选股-->
                     <section class="row">
-                        <table class="table table-hover table-responsive table-holding">
+                        <table id="table-holding" class="table table-hover table-responsive table-holding">
                             <tr>
                                 <th>
                                     股票名称
@@ -473,6 +473,19 @@
                                 </td>
                             </tr>
                         </table>
+                         <!--根据涨跌改变颜色-->
+                                        <script type="text/javascript">
+                                        var x=document.getElementById("table-holding").rows;
+                                         for(var i=1;i<x.length;i++){
+                                       changeColor(x[i].cells[3].innerText,x[i].cells[1]);
+                                       changeColor(x[i].cells[3].innerText,x[i].cells[2]);
+                                       changeColor(x[i].cells[3].innerText,x[i].cells[3]);
+                                       changeColor(x[i].cells[7].innerText,x[i].cells[6]);
+                                       changeColor(x[i].cells[7].innerText,x[i].cells[7]);
+                                       
+                                       }
+                                        </script>
+
                         <!--end-自选股-->
                         <!--分页-->
                         <!--只有大于15条的时候才会出现分页-->

@@ -42,15 +42,15 @@ html,body{
 .section-header-stock-price .stock-change{
 	font-size: 0.9em;
 	text-align: center;
-	color: #eb6877;
+	color: #000;
 	margin: 0px;
 }
 
 .section-header-stock-price .stock-change .price{
-    color:#32b16c;
+    color:#000;
 }
 .section-header-stock-price .stock-change .rate{
-    color:#eb6877;
+    color:#000;
 }
 
 .section-header-stock-info{
@@ -79,4 +79,23 @@ html,body{
 .section-five .items{
 	margin:5px 20px;
 	color: #707070;
+}
+.time-selector{
+margin-left: 30px;
+}
+
+.time-selector span{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 0.5em;
+	background-color: #eeeeee;
+	padding: 5px 10px;
+	min-width: 100px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.time-selector .active{
+	background-color: #3894c5;
+	color: #fff;
 }

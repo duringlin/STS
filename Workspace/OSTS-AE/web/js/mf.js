@@ -1,6 +1,6 @@
 /**input的下拉框**/
 function dropList(obj){
-        var subjects = ['600148 长春一东', '601398 工商银行', '002142 宁波银行', '601939 建设银行', '601009 南京银行'];
+        var subjects = ['600148 长春一东(CCYD)', '601398 工商银行(GSYH)', '002142 宁波银行(NBYH)', '601939 建设银行(JSYH)', '601009 南京银行(NJYH)'];
         
         $(obj).typeahead({source: subjects});
        }
@@ -94,6 +94,19 @@ function changeColor(mValue,mElement){
 	}
 }
 
+/**根据某个值改变颜色**/
+function changeColorWithBase(mValue1,mValue2){
+	if(mValue1<mValue2){
+		mValue2.style.color="#eb6877";
+	}
+	else if(mValue1>mValue2){
+		mValue2.style.color="#80c269";
+	}
+	else{
+		mValue2.style.color="#535353";
+	}
+}
+
 /**根据涨跌改变内容**/
 function changeValue(mValue,mElement,mChangeValues){
     if(mChangeValues.length!=3)
@@ -109,6 +122,25 @@ function changeValue(mValue,mElement,mChangeValues){
 	}
 }
 
+
+/**根据某个值改变颜色**/
+function changeColorInEntrust(mElement){
+	if(mElement.innerText=="委托取消"){
+		mElement.style.color="#89c997";
+	}
+	else if(mElement.innerText=="部分成交"){
+		mElement.style.color="#8c97cb";
+	}
+	else if(mElement.innerText=="尚未成交"){
+		mElement.style.color="#f29a76";
+	}
+	else if(mElement.innerText=="成交失败"){
+		mElement.style.color="#ec6941";
+	}
+	else{
+		mElement.style.color="#535353";
+	}
+}
 
 /**bootstrap-typeahead**/
 !

@@ -173,7 +173,7 @@
                     <!--body-->
                     <!--自选股-->
                     <section class="row">
-                        <table class="table table-hover table-responsive table-ostock">
+                        <table id="table-ostock" class="table table-hover table-responsive table-ostock">
                             <tr>
                                 <th>
                                     代码
@@ -236,7 +236,7 @@
                                 <td>
                                     <img src="img/icon/delete-512.png" width="15px">
                                 </td>
-                            </tr>
+                                                              </tr>
                             <tr>
                                 <td>
                                     SZ002024
@@ -430,6 +430,17 @@
                                 </td>
                             </tr>
                         </table>
+                           <!--根据涨跌改变颜色-->
+                                        <script type="text/javascript">
+                                        var x=document.getElementById("table-ostock").rows;
+                                         for(var i=1;i<x.length;i++){
+                                       changeColor(x[i].cells[4].innerText,x[i].cells[2]);
+                                       changeColor(x[i].cells[4].innerText,x[i].cells[3]);
+                                       changeColor(x[i].cells[4].innerText,x[i].cells[4]);
+                                       changeColorWithBase(x[i].cells[6].innerText,x[i].cells[5]);
+                                       }
+                                        </script>
+
                         <!--end-自选股-->
                         <!--分页-->
                         <!--只有大于15条的时候才会出现分页-->

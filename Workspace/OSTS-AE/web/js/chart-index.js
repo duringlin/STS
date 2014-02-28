@@ -93,6 +93,7 @@ $(function () {
                 },
                 lineWidth: 1,
                 marker: {
+                radius: 1,
                     enabled: false
                 },
                 shadow: true,

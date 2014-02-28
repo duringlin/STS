@@ -13,15 +13,18 @@
   box-shadow: 0 2px 0 #eeeeee;
   -moz-box-sizing: border-box;
 }
-.login-box{
-  background-color: #00809d;
-}
+
 .trading-box{
   width: 100%;
 }
 .news-box{
 width: 100%;
 }
+
+.login-box{
+  background-color: #00809d;
+}
+
 .login-title{
 	height: 100px;
 	margin: 0 auto;
@@ -46,6 +49,7 @@ width: 100%;
 	text-align: center;
 	border-top:2px solid #EFEFEF;
 }
+
 .signin-btn{
   position: relative;
   top: 0;

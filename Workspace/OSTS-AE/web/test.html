@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>
+            STS Online
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/mf.css">
+        <link rel="stylesheet" href="css/css-buy-sell.css">
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script src="js/mf.js">
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    
+    <body>
+        <!--屏蔽IE浏览器-->
+        <!--[if IE]>
+            <script language='javascript'>
+                document.location = "no-ie.html"
+            </script>
+        <![endif]-->
+        <!--header-->
+        <header>
+            <div class="navbar navbar-default navbar-style" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            在线股票交易系统
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input id="stock-search" type="text" class="form-control" data-provide="typeahead"
+                                            data-items="4" placeholder="请输入股票代码或简拼">
+                                            <script type="text/javascript">
+                                                dropList('#stock-search');
+                                            </script>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/JPY-512.png" width="18px">
+                                        1200,00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/polyline-512.png" width="18px">
+                                        4500,00
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        王大锤
+                                        <b class="caret">
+                                        </b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                修改资料
+                                            </a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                退出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/pic/example-user.jpeg" width="50px">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-header-->
+        <div>
+            <script type="text/javascript">
+                var today = new Date(
+                /* 2014, 2, 3 */
+                ); //定义当天日期对象 
+                var year = today.getFullYear(); //获取年份 
+                var month = today.getMonth(); //获取月份 
+                var date = today.getDate(); //获取日期值 
+                var nextDay;
+                var str;
+
+                var day = 30;
+                /**需要计算的天数**/
+                var hour = 9;
+                var minutes = 59;
+                var xArr;
+                var x_arr = [];
+                var change = 0;
+                while (day != change) {
+                    try {
+                        nextDay = new Date(year, month, date - change);
+                        if (nextDay.getDay() >= 1 && nextDay.getDay() <= 5) {
+                            str = nextDay.getFullYear() + "-" + FormatNum((nextDay.getMonth() + 1) + "", 2) + "-" + FormatNum(nextDay.getDate() + "", 2) + " ";
+                        } else if (nextDay.getDay() == 6 || nextDay.getDay() == 0) {
+                            day++;
+                            change++;
+                            continue;
+                        }
+                    } catch(e) {
+                        var str = "";
+                        alert(e.message);
+                    }
+                    change++;
+                     x_arr.push(str);
+                         
+                }
+                /**数组反转**/
+                x_arr.reverse();
+                
+                document.write(x_arr);
+
+                /**格式化数字为一个定长的字符串，前面补０ 
+*参数: 
+* Source 待格式化的字符串 
+* Length 需要得到的字符串的长度 
+*/
+                function FormatNum(Source, Length) {
+                    var strTemp = "";
+                    for (r = 1; r <= Length - Source.length; r++) {
+                        strTemp += "0";
+                    }
+                    return strTemp + Source;
+                }
+            </script>
+        </div>
+    </body>
+
+</html>
