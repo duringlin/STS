@@ -1,6 +1,14 @@
-STS
-===
+#STS
 
-Securities trading system——Project Training
+###Securities trading system——Project Training
 
-CST 实训项目
+这是一个学生项目，来自浙江大学软件学院。其功能是实现一个带有券商系统和中央交易系统的股票在线系统。
+
+----
+####目前完成项：
+
+>* 需求分析
+>* 用例规约
+>* 数据库设计
+>* 前端设计及实现
+
