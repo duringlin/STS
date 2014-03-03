@@ -22,5 +22,22 @@ public interface IUserDAO {
 	 * @return 是否注册成功
 	 */
 	public boolean Regist(Users users);
-	public 
+	/**
+	 * 用户账户查询
+	 * @param users
+	 * @return 用户信息
+	 */
+	public Users searchUser(Users users);
+	/**
+	 * 用户密码修改
+	 * @param users
+	 * @return 是否修改成功
+	 */
+	public boolean updatePwd(Users users);
+	/**
+	 * 用户信息修改		
+	 * @param users
+	 * @return 是否修改成功
+	 */
+	public boolean updateUser(Users users);
 }
