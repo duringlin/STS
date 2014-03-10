@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	<session-factory>
+	<!-- 交给TransAction 处理 -->
+	 <!-- 数据处理使用的方言，对应对应给出相应的sql语句和事物处理 -->
+	 <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	 <!-- 交给Connection Provider 处理 -->
+	<!-- 数据库连接所需的基本连接数据 -->
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://10.82.199.242:3306/se_bank</property>
+	<property name="connection.username">sa</property>
+	<property name="connection.password">12345678</property>
+	<!-- 执行显示sql语句 -->
+	<property name="show_sql">true</property>
+	<!-- 添加映射文件 -->
+	<mapping resource="com/savingbusiness/users/po/Users.hbm.xml"/>
+	<mapping resource="com/savingbusiness/trading/po/Trading.hbm.xml"/>
+	<mapping resource="com/savingbusiness/coin/po/Coin.hbm.xml"/>
+	<mapping resource="com/savingbusiness/business/po/Business.hbm.xml"/>
+	</session-factory>
+	
+	
+	</hibernate-configuration>
