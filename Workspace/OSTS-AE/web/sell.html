@@ -196,13 +196,16 @@ else{
                         <section class="col-md-8 section-buy-sell">
                             <div class="buy-sell">
                                 <!--sell-form-->
-                                <form class="form-horizontal" role="form">
+                                <form id="form-sell" class="form-horizontal" role="form">
                                     <div class="form-group">
                                         <label for="inputStockCode" class="col-sm-2 control-label form-label">
                                             股票代码
                                         </label>
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control" id="inputStockCode" placeholder="请输入股票代码或简拼">
+                                            <script type="text/javascript">
+       dropList('#inputStockCode');
+        </script>
                                         </div>
                                     </div>
                                     <div class="form-group">
